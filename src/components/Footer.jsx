@@ -62,7 +62,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
 
               <li>
-                <a href="#services" className="hover:text-white transition">
+                <a href="/services" className="hover:text-white transition">
                   Our Services
                 </a>
               </li>
