@@ -62,15 +62,15 @@ export default function Navbar() {
 
           {/* PHONE (desktop only) */}
           <a
-            href="tel:+919000000000"
+            href="tel:+919901159323"
             className="hidden md:block text-sm font-medium text-gray-700 hover:text-black"
           >
-            +91 9000000000
+            +91 9901159323
           </a>
 
           {/* CTA */}
           <a
-            href="tel:+919000000000"
+            href="tel:+919901159323"
             className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-900 transition shadow-md"
           >
             Book Now
@@ -113,7 +113,7 @@ export default function Navbar() {
 
           {/* MOBILE CTA */}
           <a
-            href="tel:+919000000000"
+            href="tel:+919901159323"
             className="block mt-4 bg-black text-white text-center py-3 rounded-full font-semibold"
           >
             Book Now

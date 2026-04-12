@@ -138,7 +138,7 @@ export default function BlogDetail() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:+919000000000"
+              href="tel:+919901159323"
               className="bg-white text-black px-6 py-3 rounded-full text-sm font-medium"
             >
               Call Now

@@ -58,7 +58,7 @@ const localBusinessSchema = {
   "@type": "TaxiService",
   "name": "Udupi Tours and Travels",
   "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a",
-  "telephone": "+91 9000000000",
+  "telephone": "+91 9901159323",
   "areaServed": {
     "@type": "Place",
     "name": "Udupi, Manipal, Karnataka"
@@ -197,14 +197,14 @@ const handleScroll = () => {
       className="flex flex-col md:flex-row gap-4 justify-center"
     >
       <a
-        href="tel:+919000000000"
+        href="tel:+919901159323"
         className="bg-red-600 hover:bg-red-700 px-10 py-4 rounded-2xl text-base font-semibold shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition hover:scale-[1.03]"
       >
         Get Taxi Now
       </a>
 
       <a
-        href="https://wa.me/919000000000"
+        href="https://wa.me/919901159323"
         className="border border-white/30 backdrop-blur-md hover:bg-white hover:text-black px-10 py-4 rounded-2xl text-base transition"
       >
         WhatsApp Booking
@@ -725,7 +725,7 @@ const handleScroll = () => {
             <div className="flex items-center justify-between">
 
               <a
-                href="tel:+919000000000"
+                href="tel:+919901159323"
                 className="text-red-600 text-sm font-medium flex items-center gap-2 group-hover:gap-3 transition-all"
               >
                 Book Now
@@ -918,7 +918,7 @@ const handleScroll = () => {
       </a>
 
       <a
-        href="tel:+919000000000"
+        href="tel:+919901159323"
         className="border border-gray-300 px-8 py-3 rounded-2xl text-sm hover:bg-black hover:text-white transition"
       >
         Book Your Ride
@@ -1162,14 +1162,14 @@ const handleScroll = () => {
     >
 
       <a
-        href="tel:+919000000000"
+        href="tel:+919901159323"
         className="bg-red-600 hover:bg-red-700 px-10 py-4 rounded-2xl text-base font-semibold shadow-[0_10px_40px_rgba(255,0,0,0.25)] transition hover:scale-[1.03]"
       >
         Call Now & Book Taxi
       </a>
 
       <a
-        href="https://wa.me/919000000000"
+        href="https://wa.me/919901159323"
         className="border border-white/30 backdrop-blur-md hover:bg-white hover:text-black px-10 py-4 rounded-2xl text-base transition"
       >
         Book on WhatsApp

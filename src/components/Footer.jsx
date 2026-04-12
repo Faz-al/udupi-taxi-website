@@ -90,11 +90,11 @@ export default function Footer() {
 
             <div className="space-y-3 text-sm text-gray-400">
 
-              <a href="tel:+919000000000" className="block hover:text-white transition">
-                📞 +91 9000000000
+              <a href="tel:+919901159323" className="block hover:text-white transition">
+                📞 +91 9901159323
               </a>
 
-              <a href="https://wa.me/919000000000" className="block hover:text-white transition">
+              <a href="https://wa.me/919901159323" className="block hover:text-white transition">
                 💬 WhatsApp Booking
               </a>
 

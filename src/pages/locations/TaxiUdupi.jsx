@@ -32,7 +32,7 @@ export default function TaxiUdupi() {
         </p>
 
         <a
-          href="tel:+919000000000"
+          href="tel:+919901159323"
           className="bg-red-600 text-white px-8 py-4 rounded-2xl text-lg hover:bg-red-700 transition"
         >
           📞 Book Taxi Now
@@ -141,7 +141,7 @@ export default function TaxiUdupi() {
         </motion.h3>
 
         <a
-          href="tel:+919000000000"
+          href="tel:+919901159323"
           className="bg-red-600 px-10 py-4 rounded-2xl text-lg hover:bg-red-700 transition"
         >
           Call Now

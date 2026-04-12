@@ -81,7 +81,7 @@ export default function ServiceDetail() {
               variants={fadeUp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              href="tel:+919000000000"
+              href="tel:+919901159323"
               className="mt-8 w-fit bg-white text-black px-8 py-4 rounded-full text-sm font-medium"
             >
               Book Now →
@@ -163,7 +163,7 @@ export default function ServiceDetail() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:+919000000000"
+              href="tel:+919901159323"
               className="bg-white text-black px-6 py-3 rounded-full text-sm font-medium"
             >
               Call Now

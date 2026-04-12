@@ -1,8 +1,21 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 export default function TaxiManipal() {
+  
   return (
+    
+    
+
     <div className="bg-white text-black">
+      
+      <Helmet>
+  <title>Taxi in Manipal | Affordable Cab Service</title>
+  <meta
+    name="description"
+    content="Reliable taxi service in Manipal for students and travelers. Book cab now."
+  />
+</Helmet>
 
       {/* HERO */}
       <section className="py-32 text-center bg-gray-50">
@@ -18,7 +31,7 @@ export default function TaxiManipal() {
           Book reliable taxi service in Manipal for local travel, college trips, airport transfers and outstation journeys. Available 24/7 with professional drivers.
         </p>
 
-        <a href="tel:+919000000000" className="bg-red-600 text-white px-8 py-4 rounded-2xl text-lg">
+        <a href="tel:+919901159323" className="bg-red-600 text-white px-8 py-4 rounded-2xl text-lg">
           📞 Book Taxi Now
         </a>
       </section>
@@ -51,7 +64,7 @@ export default function TaxiManipal() {
           Book Taxi in Manipal Now
         </h3>
 
-        <a href="tel:+919000000000" className="bg-red-600 px-10 py-4 rounded-2xl text-lg">
+        <a href="tel:+919901159323" className="bg-red-600 px-10 py-4 rounded-2xl text-lg">
           Call Now
         </a>
       </section>
