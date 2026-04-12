@@ -23,12 +23,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10 py-4">
 
         {/* LOGO */}
-        <Link
-          to="/"
-          className="text-2xl font-bold tracking-tight"
-        >
-          Udupi<span className="text-red-600">.</span>
-        </Link>
+        <Link to="/" className="flex items-center">
+  <img
+    src="/logo.png"
+    alt="Udupi Tours and Travels"
+    className="h-12 w-auto object-contain"
+  />
+</Link>
 
         {/* DESKTOP LINKS */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
