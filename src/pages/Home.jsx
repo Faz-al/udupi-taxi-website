@@ -117,6 +117,10 @@ const handleScroll = () => {
   content="Looking for a reliable taxi in Udupi or Manipal? Book airport taxi, local rides and outstation cabs with Udupi Tours and Travels. 24/7 service, professional drivers and instant booking confirmation." 
 />
 
+<link rel="preconnect" href="https://images.unsplash.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+
   {/* FAQ Schema */}
   <script type="application/ld+json">
     {JSON.stringify(faqSchema)}
@@ -145,9 +149,10 @@ const handleScroll = () => {
     initial={{ scale: 1.1 }}
     animate={{ scale: 1 }}
     transition={{ duration: 2.5, ease: "easeOut" }}
-    src="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+    src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format"
   alt="Taxi service in Udupi with premium car"
   loading="eager"
+  fetchpriority="high"
     className="absolute w-full h-full object-cover"
   />
 
@@ -503,7 +508,7 @@ const handleScroll = () => {
           {
             title: "Udupi to Goa",
             tag: "Most Popular",
-            img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+            img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format",
           },
           {
             title: "Dharmasthala Temple",
@@ -513,7 +518,7 @@ const handleScroll = () => {
           {
             title: "Coastal Family Tours",
             tag: "Family Travel",
-            img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+            img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format",
           },
         ].map((trip, i) => (
           <div
@@ -585,7 +590,7 @@ const handleScroll = () => {
         {
           title: "Udupi to Goa",
           tag: "Most Popular",
-          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format",
         },
         {
           title: "Dharmasthala Temple",
@@ -595,7 +600,7 @@ const handleScroll = () => {
         {
           title: "Coastal Family Tours",
           tag: "Family Travel",
-          img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+          img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format",
         },
       ].map((trip, i) => (
         <motion.div
@@ -900,6 +905,7 @@ const handleScroll = () => {
       className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200"
     >
       <iframe
+        title="Udupi taxi service location on Google Maps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.119187335874!2d74.75118144017551!3d13.342861306682783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbd27ce127fa7%3A0xe0af20a9c7cfbd15!2sUdupi%20Taxi%20-%20Udupi%20Tours%20and%20Travels!5e0!3m2!1sen!2sin!4v1775884781396!5m2!1sen!2sin"
         className="w-full h-[420px] md:h-[480px]"
         style={{ border: 0 }}
