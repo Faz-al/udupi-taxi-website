@@ -1,18 +1,17 @@
+import { client } from "../src/lib/sanity";
+
 export default async function handler(req, res) {
   try {
-    const baseUrl = "https://www.udupitaxi.co.in"
+    const baseUrl = "https://www.udupitaxi.co.in";
 
-    // 🔥 Fetch blogs
     const blogs = await client.fetch(`*[_type == "blog"]{
       "slug": slug.current
-    }`)
+    }`) || [];
 
-    // 🔥 Fetch services
     const services = await client.fetch(`*[_type == "service"]{
       "slug": slug.current
-    }`)
+    }`) || [];
 
-    // 🔥 Static pages
     const staticPages = [
       "",
       "/services",
@@ -20,7 +19,7 @@ export default async function handler(req, res) {
       "/taxi-in-udupi",
       "/taxi-in-manipal",
       "/airport-taxi"
-    ]
+    ];
 
     const staticUrls = staticPages.map(
       (page) => `
@@ -29,7 +28,7 @@ export default async function handler(req, res) {
           <changefreq>weekly</changefreq>
           <priority>${page === "" ? "1.0" : "0.9"}</priority>
         </url>`
-    ).join("")
+    ).join("");
 
     const blogUrls = blogs.map(
       (blog) => `
@@ -38,7 +37,7 @@ export default async function handler(req, res) {
           <changefreq>monthly</changefreq>
           <priority>0.7</priority>
         </url>`
-    ).join("")
+    ).join("");
 
     const serviceUrls = services.map(
       (service) => `
@@ -47,22 +46,20 @@ export default async function handler(req, res) {
           <changefreq>monthly</changefreq>
           <priority>0.85</priority>
         </url>`
-    ).join("")
+    ).join("");
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
       ${staticUrls}
       ${serviceUrls}
       ${blogUrls}
+    </urlset>`;
 
-    </urlset>`
-
-    res.setHeader('Content-Type', 'text/xml')
-    res.status(200).send(xml)
+    res.setHeader("Content-Type", "text/xml");
+    res.status(200).send(xml);
 
   } catch (error) {
-    console.error(error)
-    res.status(500).send("Error generating sitemap")
+    console.error("SITEMAP ERROR:", error.message, error);
+    res.status(500).send("Error generating sitemap");
   }
 }
