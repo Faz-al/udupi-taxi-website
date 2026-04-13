@@ -77,7 +77,7 @@ const localBusinessSchema = {
     "addressRegion": "Karnataka",
     "addressCountry": "India"
   },
-  "url": "https://yourdomain.com",
+  "url": "https://www.udupitaxi.co.in",
   "priceRange": "₹₹",
   "availableLanguage": ["English", "Hindi", "Kannada"]
 };
@@ -110,7 +110,7 @@ const handleScroll = () => {
    <Helmet>
 
     <title>Taxi Service in Udupi & Manipal | Airport Taxi, Local & Outstation Cabs</title>
-    <link rel="canonical" href="https://yourdomain.com/" />
+    <link rel="canonical" href="https://www.udupitaxi.co.in" />
 <meta 
   name="description" 
   content="Looking for a reliable taxi in Udupi or Manipal? Book airport taxi, local rides and outstation cabs with Udupi Tours and Travels. 24/7 service, professional drivers and instant booking confirmation." 
