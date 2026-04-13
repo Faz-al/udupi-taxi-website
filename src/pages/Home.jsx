@@ -55,13 +55,14 @@ export default function Home() {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "TaxiService",
+  "@type": ["LocalBusiness", "TravelAgency"],
   "name": "Udupi Tours and Travels",
   "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a",
   "telephone": "+91 9901159323",
   "areaServed": {
     "@type": "Place",
-    "name": "Udupi, Manipal, Karnataka"
+    "name": "Udupi, Manipal, Karnataka",
+    
   },
 
   "aggregateRating": {
@@ -75,7 +76,7 @@ const localBusinessSchema = {
     "@type": "PostalAddress",
     "addressLocality": "Udupi",
     "addressRegion": "Karnataka",
-    "addressCountry": "India"
+    "addressCountry": "IN"
   },
   "url": "https://www.udupitaxi.co.in",
   "priceRange": "₹₹",
