@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const baseUrl = "https://udupi-taxi-website.vercel.app"
+    const baseUrl = "https://www.udupitaxi.co.in"
 
     // 🔥 Fetch blogs
     const blogs = await client.fetch(`*[_type == "blog"]{
