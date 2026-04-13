@@ -8,7 +8,14 @@ export default function Services() {
 
   useEffect(() => {
     client
-      .fetch(`*[_type == "service"]`)
+      .fetch(`*[_type == "service"]{
+  _id,
+  title,
+  slug,
+  image,
+  description,
+  excerpt
+}`)
       .then((data) => setServices(data));
   }, []);
 
@@ -55,8 +62,8 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
-  {service.description}
+ <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+  {service.excerpt || service.description?.[0]?.children?.[0]?.text || "View details"}
 </p>
 
                 <span className="inline-flex items-center text-sm font-medium text-red-600">

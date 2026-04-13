@@ -4,6 +4,9 @@ import { client } from "../../sanity";
 import { urlFor } from "../../imageUrl";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import PortableTextRenderer from "@/components/PortableTextRenderer";
+
+
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -11,7 +14,15 @@ export default function ServiceDetail() {
 
   useEffect(() => {
     client
-      .fetch(`*[_type == "service" && slug.current == $slug][0]`, { slug })
+      .fetch(`*[_type == "service" && slug.current == $slug][0]{
+  _id,
+  title,
+  slug,
+  image,
+  description,
+  metaTitle,
+  metaDescription
+}`, { slug })
       .then((data) => setService(data));
   }, [slug]);
 
@@ -105,9 +116,9 @@ export default function ServiceDetail() {
               About this service
             </h2>
 
-            <p className="text-gray-600 text-lg leading-relaxed">
-              {service.description}
-            </p>
+            <div className="text-gray-700 text-lg leading-relaxed">
+  <PortableTextRenderer value={service.description} />
+</div>
           </div>
 
           {/* Divider */}
