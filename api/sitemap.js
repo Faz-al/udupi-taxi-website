@@ -1,5 +1,11 @@
-import { client } from "../lib/sanity";
+import { createClient } from "@sanity/client";
 
+const client = createClient({
+  projectId: "sq3gr9q6", // your project id
+  dataset: "production",
+  apiVersion: "2023-01-01",
+  useCdn: true,
+});
 
 export default async function handler(req, res) {
   try {
