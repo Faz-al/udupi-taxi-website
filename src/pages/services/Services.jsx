@@ -66,8 +66,14 @@ export default function Services() {
   {service.excerpt ||
     (Array.isArray(service.description)
       ? service.description
-          .find(block => block._type === "block")
-          ?.children?.map(child => child.text).join("")
+          .filter(block => block._type === "block")
+          .map(block =>
+            block.children
+              ?.filter(child => child._type === "span")
+              .map(child => child.text)
+              .join("")
+          )
+          .join(" ")
       : typeof service.description === "string"
       ? service.description
       : "View details")}
