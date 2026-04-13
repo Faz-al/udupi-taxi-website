@@ -10,12 +10,13 @@ import AirportTaxi from "./pages/locations/AirportTaxi";
 
 import Blogs from "./pages/blogs/Blogs";
 import BlogDetail from "./pages/blogs/BlogDetail";
-
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 
 
 export default function App() {
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
@@ -31,5 +32,7 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <SpeedInsights />
+    </>
   );
 }
