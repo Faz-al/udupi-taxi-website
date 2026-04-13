@@ -1,4 +1,4 @@
-import { client } from "../src/lib/sanity";
+import { client } from "../lib/sanity";
 
 export default async function handler(req, res) {
   try {
