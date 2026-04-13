@@ -4,8 +4,7 @@ import { client } from "../../sanity";
 import { urlFor } from "../../imageUrl";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import PortableTextRenderer from "@/components/PortableTextRenderer";
-
+import PortableTextRenderer from "../../components/PortableTextRenderer";
 
 
 export default function ServiceDetail() {
