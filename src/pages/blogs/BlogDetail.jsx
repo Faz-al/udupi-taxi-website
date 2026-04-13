@@ -4,6 +4,7 @@ import { client } from "../../sanity";
 import { urlFor } from "../../imageUrl";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import PortableTextRenderer from "../../components/PortableTextRenderer";
 
 export default function BlogDetail() {
   const { slug } = useParams();
@@ -59,18 +60,33 @@ export default function BlogDetail() {
             className="relative z-10 max-w-4xl mx-auto px-6 h-full flex flex-col justify-center"
           >
             <motion.h1
-              variants={fadeUp}
-              className="text-4xl md:text-6xl font-semibold text-white leading-tight"
-            >
-              {blog.title}
-            </motion.h1>
+  variants={fadeUp}
+  className="text-4xl md:text-6xl font-semibold text-white leading-tight"
+>
+  {blog.title}
+</motion.h1>
 
-            <motion.p
-              variants={fadeUp}
-              className="text-gray-300 mt-4 text-sm"
-            >
-              Travel insights • Premium taxi service
-            </motion.p>
+{/* DATE */}
+<motion.p
+  variants={fadeUp}
+  className="text-gray-400 mt-3 text-sm"
+>
+  {blog._createdAt &&
+  new Date(blog._createdAt).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  })}
+</motion.p>
+
+<motion.p
+  variants={fadeUp}
+  className="text-gray-300 mt-2 text-sm"
+>
+  Travel insights • Premium taxi service
+</motion.p>
+
+<div className="w-16 h-[2px] bg-white/30 mt-4"></div>
           </motion.div>
         </div>
 
@@ -84,13 +100,13 @@ export default function BlogDetail() {
         >
 
           {/* Article */}
-          <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+          <div>
 
-            {blog.content?.map((block, i) => (
-              <p key={i}>
-                {block.children?.map((child) => child.text).join("")}
-              </p>
-            ))}
+            {Array.isArray(blog.content) ? (
+  <PortableTextRenderer value={blog.content} />
+) : (
+  <p className="text-gray-700 text-lg">{blog.content}</p>
+)}
 
           </div>
 
