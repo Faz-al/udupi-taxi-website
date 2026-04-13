@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { client } from "../../lib/sanity";
+import { client } from "../../sanity";
 import { urlFor } from "../../imageUrl";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";

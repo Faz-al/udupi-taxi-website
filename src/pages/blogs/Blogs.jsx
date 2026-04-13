@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { client } from "../../lib/sanity";
+import { client } from "../../sanity";
 import { urlFor } from "../../imageUrl";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

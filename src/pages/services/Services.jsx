@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { client } from "../../lib/sanity";
+import { client } from "../../sanity";
 import { Link } from "react-router-dom";
 import { urlFor } from "../../imageUrl";
 
