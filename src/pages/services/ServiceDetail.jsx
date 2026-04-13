@@ -115,12 +115,12 @@ export default function ServiceDetail() {
               About this service
             </h2>
 
-            <div className="text-gray-700 text-lg leading-relaxed">
+           <div>
   {Array.isArray(service.description) ? (
-  <PortableTextRenderer value={service.description} />
-) : (
-  <p>{service.description}</p>
-)}
+    <PortableTextRenderer value={service.description} />
+  ) : (
+    <p className="text-gray-700 text-lg">{service.description}</p>
+  )}
 </div>
           </div>
 
