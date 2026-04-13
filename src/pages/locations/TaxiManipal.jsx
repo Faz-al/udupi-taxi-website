@@ -6,11 +6,53 @@ export default function TaxiManipal() {
     <div className="bg-white text-black">
       
       <Helmet>
-        <title>Taxi in Manipal | Best Cab Service 24/7 | Airport & Bangalore Taxi</title>
+        <title>Taxi in Manipal | 24/7 Cab Service | Bangalore & Airport Taxi</title>
         <meta
           name="description"
           content="Book the best taxi service in Manipal for airport transfer, Bangalore, Dharmasthala and local travel. 24/7 reliable cab service for students, hospitals and travelers."
         />
+
+        <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is taxi service available for students in Manipal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide affordable and reliable taxi services for students, including college and hostel trips."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide taxi for KMC Hospital visits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide taxi services for hospital visits, including KMC Manipal, with priority bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book taxi from Manipal to Bangalore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide comfortable and safe taxi service from Manipal to Bangalore with experienced drivers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide airport taxi from Manipal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide Manipal to Mangalore airport taxi service with on-time pickup and 24/7 availability."
+      }
+    }
+  ]
+})}
+</script>
+
       </Helmet>
 
       {/* HERO */}
@@ -40,13 +82,32 @@ export default function TaxiManipal() {
       </section>
 
       {/* IMAGE STRIP */}
-      <section className="py-16 max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-6">
-          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" className="rounded-2xl object-cover h-56 w-full" />
-          <img src="https://images.unsplash.com/photo-1562774053-701939374585" className="rounded-2xl object-cover h-56 w-full" />
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" className="rounded-2xl object-cover h-56 w-full" />
-        </div>
-      </section>
+<section className="py-16 max-w-6xl mx-auto px-6">
+  <div className="grid md:grid-cols-3 gap-6">
+
+    <img 
+      src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+      alt="Taxi service in Manipal near MIT campus"
+      loading="lazy"
+      className="rounded-2xl object-cover h-56 w-full" 
+    />
+
+    <img 
+      src="https://images.unsplash.com/photo-1576765608866-5b51046452be"
+      alt="Cab service in Manipal for KMC Hospital patients and visitors"
+      loading="lazy"
+      className="rounded-2xl object-cover h-56 w-full" 
+    />
+
+    <img 
+      src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+      alt="Outstation taxi service from Manipal to Bangalore and nearby cities"
+      loading="lazy"
+      className="rounded-2xl object-cover h-56 w-full" 
+    />
+
+  </div>
+</section>
 
       {/* SERVICES */}
       <section className="py-28 max-w-7xl mx-auto px-6">
@@ -152,30 +213,117 @@ export default function TaxiManipal() {
         </div>
       </section>
 
-      {/* SEO CONTENT */}
-      <section className="py-28 max-w-4xl mx-auto px-6 text-center">
+     {/* SEO CONTENT */}
+<section className="py-28 max-w-4xl mx-auto px-6 text-center">
 
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="text-3xl font-bold mb-6"
-        >
-          Best Taxi Service in Manipal for Students, Hospitals & Travel
-        </motion.h2>
+  <motion.h2
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    className="text-3xl font-bold mb-6"
+  >
+    Best Taxi Service in Manipal for Students, Hospitals & Travel
+  </motion.h2>
 
-        <p className="text-gray-600 leading-7 mb-6">
-          Manipal is a vibrant hub known for its universities, hospitals, and lifestyle. Whether you are a student at MIT, visiting KMC Hospital, or traveling to nearby places, having a reliable taxi service in Manipal is essential for smooth and stress-free travel.
-        </p>
+  <p className="text-gray-600 leading-7 mb-6">
+    Manipal is a major educational and medical hub, home to MIT and KMC Hospital. Whether you are a student, visitor, or patient, having a reliable taxi service in Manipal ensures smooth daily travel.
+  </p>
 
-        <p className="text-gray-600 leading-7 mb-6">
-          Our taxi service in Manipal offers airport transfers to Mangalore Airport, long-distance trips to Bangalore, temple visits to Dharmasthala, and local rides to Udupi and nearby areas. We ensure timely pickups, professional drivers, and clean vehicles for every journey.
-        </p>
+  <p className="text-gray-600 leading-7 mb-6">
+    We offer quick access to nearby areas through our{" "}
+    <a href="/taxi-in-udupi" className="text-red-600 font-medium hover:underline">
+      taxi service in Udupi
+    </a>{" "}
+    and also provide reliable{" "}
+    <a href="/airport-taxi" className="text-red-600 font-medium hover:underline">
+      Manipal to Mangalore airport taxi
+    </a>{" "}
+    for hassle-free airport transfers.
+  </p>
 
-        <p className="text-gray-600 leading-7">
-          If you are searching for the best taxi in Manipal, we provide a premium travel experience with reliable service, affordable pricing, and 24/7 availability.
-        </p>
+  <p className="text-gray-600 leading-7">
+    Our services also include long-distance taxi from Manipal to Bangalore, Dharmasthala, and Goa, making us a complete travel solution for all your needs.
+  </p>
 
-      </section>
+  <p className="text-gray-600 leading-7 mt-6">
+  If you are searching for the best taxi in Manipal, our service offers reliable, safe, and comfortable travel for students, hospital visits, and outstation trips.
+</p>
+
+</section>
+
+
+
+{/* FAQ SECTION */}
+<section className="py-20 max-w-4xl mx-auto px-6">
+  <h3 className="text-2xl font-semibold text-center mb-10">
+    Frequently Asked Questions – Taxi in Manipal
+  </h3>
+
+  <div className="space-y-6">
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Is taxi service available for students in Manipal?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we provide affordable and reliable taxi services for students, including college and hostel trips.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Do you provide taxi for KMC Hospital visits?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we provide taxi services for hospital visits, including KMC Manipal, with priority bookings.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Can I book taxi from Manipal to Bangalore?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we provide comfortable and safe taxi service from Manipal to Bangalore with experienced drivers.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Do you provide airport taxi from Manipal?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we provide Manipal to Mangalore airport taxi service with on-time pickup and 24/7 availability.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+{/* RELATED SERVICES */}
+<section className="py-20 max-w-5xl mx-auto px-6 text-center">
+  <h3 className="text-2xl font-semibold mb-8">
+    Explore Our Taxi Services
+  </h3>
+
+  <div className="flex flex-wrap justify-center gap-4">
+
+    <a href="/taxi-in-udupi" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Taxi in Udupi
+    </a>
+
+    <a href="/taxi-in-manipal" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Taxi in Manipal
+    </a>
+
+    <a href="/airport-taxi" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Airport Taxi Service
+    </a>
+
+  </div>
+</section>
+
 
       {/* CTA */}
       <section className="py-28 bg-black text-white text-center">

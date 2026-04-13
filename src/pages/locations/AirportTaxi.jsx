@@ -11,6 +11,48 @@ export default function AirportTaxi() {
           name="description"
           content="Book Udupi to Mangalore Airport taxi with reliable 24/7 service. On-time pickup, clean cars, and affordable pricing from Udupi, Manipal, and nearby areas."
         />
+
+
+        <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Udupi to Mangalore Airport taxi cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost depends on vehicle type and timing. We offer fixed and transparent pricing with no hidden charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take from Udupi to Mangalore Airport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The travel time is usually around 1.5 to 2 hours, depending on traffic conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide early morning airport pickup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide 24/7 airport taxi service, including early morning and late-night pickups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book one way airport taxi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer one-way airport taxi service from Udupi and Manipal without return charges."
+      }
+    }
+  ]
+})}
+</script>
       </Helmet>
 
       {/* HERO */}
@@ -39,14 +81,33 @@ export default function AirportTaxi() {
         </a>
       </section>
 
-      {/* IMAGE STRIP */}
-      <section className="px-6 pb-10 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-6">
-          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" className="rounded-2xl h-52 w-full object-cover" />
-          <img src="https://images.unsplash.com/photo-1502920917128-1aa500764b6c" className="rounded-2xl h-52 w-full object-cover" />
-          <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92" className="rounded-2xl h-52 w-full object-cover" />
-        </div>
-      </section>
+  {/* IMAGE STRIP */}
+<section className="px-6 pb-10 max-w-6xl mx-auto">
+  <div className="grid md:grid-cols-3 gap-6">
+
+    <img 
+      src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+      alt="Taxi ready for airport drop from Udupi to Mangalore airport"
+      loading="lazy"
+      className="rounded-2xl h-52 w-full object-cover" 
+    />
+
+    <img 
+      src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80"
+      alt="Passenger with luggage using airport taxi service in Udupi"
+      loading="lazy"
+      className="rounded-2xl h-52 w-full object-cover" 
+    />
+
+    <img 
+      src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=800&q=80"
+      alt="Night airport taxi service from Manipal to Mangalore airport"
+      loading="lazy"
+      className="rounded-2xl h-52 w-full object-cover" 
+    />
+
+  </div>
+</section>
 
       {/* SERVICES / ROUTES */}
       <section className="px-6 py-20 max-w-6xl mx-auto">
@@ -140,30 +201,117 @@ export default function AirportTaxi() {
         </div>
       </section>
 
-      {/* SEO CONTENT */}
-      <section className="px-6 py-20 max-w-4xl mx-auto text-center">
+   {/* SEO CONTENT */}
+<section className="px-6 py-20 max-w-4xl mx-auto text-center">
 
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="text-3xl font-bold mb-6"
-        >
-          Best Airport Taxi from Udupi & Manipal to Mangalore Airport
-        </motion.h2>
+  <motion.h2
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    className="text-3xl font-bold mb-6"
+  >
+    Udupi to Mangalore Airport Taxi – Fast, Reliable & On-Time
+  </motion.h2>
 
-        <p className="text-gray-600 leading-7 mb-6">
-          Traveling to Mangalore International Airport from Udupi or Manipal requires a reliable taxi service that ensures timely arrival. Our airport taxi service is designed to provide comfortable and stress-free travel with professional drivers and well-maintained vehicles.
-        </p>
+  <p className="text-gray-600 leading-7 mb-6">
+    Booking a reliable airport taxi from Udupi or Manipal to Mangalore Airport is essential for stress-free travel. Our airport cab service ensures on-time pickup, smooth highway travel, and comfortable rides for every journey.
+  </p>
 
-        <p className="text-gray-600 leading-7 mb-6">
-          Whether you need an early morning pickup, late-night drop, or return airport transfer, we offer 24/7 availability with transparent pricing. Our taxi service covers Udupi, Manipal, and nearby areas, making it easy to book a cab anytime.
-        </p>
+  <p className="text-gray-600 leading-7 mb-6">
+    We specialize in{" "}
+    <strong>Udupi to Mangalore airport taxi</strong>,{" "}
+    <strong>Manipal to airport taxi</strong>, and return airport pickups with 24/7 availability. Whether you have an early morning flight or late-night arrival, we guarantee punctual service.
+  </p>
 
-        <p className="text-gray-600 leading-7">
-          If you are searching for a reliable Udupi to Mangalore airport taxi or Manipal airport cab service, we ensure every ride is safe, comfortable, and on time.
-        </p>
+  <p className="text-gray-600 leading-7">
+    You can also explore our{" "}
+    <a href="/taxi-in-udupi" className="text-red-600 font-medium hover:underline">
+      taxi service in Udupi
+    </a>{" "}
+    and{" "}
+    <a href="/taxi-in-manipal" className="text-red-600 font-medium hover:underline">
+      taxi service in Manipal
+    </a>{" "}
+    for local and outstation travel.
+  </p>
 
-      </section>
+  <p className="text-gray-600 leading-7 mt-6">
+  If you are looking for a reliable Udupi to Mangalore airport taxi, we provide on-time pickup, professional drivers, and comfortable rides for every journey.
+</p>
+
+</section>
+
+
+{/* FAQ SECTION */}
+<section className="py-20 max-w-4xl mx-auto px-6">
+  <h3 className="text-2xl font-semibold text-center mb-10">
+    Frequently Asked Questions – Airport Taxi
+  </h3>
+
+  <div className="space-y-6">
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        How much does Udupi to Mangalore Airport taxi cost?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        The cost depends on vehicle type and timing. We offer fixed and transparent pricing with no hidden charges.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        How long does it take from Udupi to Mangalore Airport?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        The travel time is usually around 1.5 to 2 hours, depending on traffic conditions.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Do you provide early morning airport pickup?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we provide 24/7 airport taxi service, including early morning and late-night pickups.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Can I book one way airport taxi?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we offer one-way airport taxi service from Udupi and Manipal without return charges.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+            {/* RELATED SERVICES */}
+<section className="py-20 max-w-5xl mx-auto px-6 text-center">
+  <h3 className="text-2xl font-semibold mb-8">
+    Explore Our Taxi Services
+  </h3>
+
+  <div className="flex flex-wrap justify-center gap-4">
+
+    <a href="/taxi-in-udupi" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Taxi in Udupi
+    </a>
+
+    <a href="/taxi-in-manipal" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Taxi in Manipal
+    </a>
+
+    <a href="/airport-taxi" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Airport Taxi Service
+    </a>
+
+  </div>
+</section>
+
 
       {/* CTA */}
       <section className="px-6 py-20 bg-black text-white text-center">

@@ -15,7 +15,7 @@ export default function Home() {
       "name": "How can I book a taxi in Udupi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can book a taxi by calling us or messaging on WhatsApp for quick confirmation."
+        "text": "You can easily book a taxi by calling us directly or sending a message on WhatsApp. We provide quick confirmation within minutes."
       }
     },
     {
@@ -23,7 +23,7 @@ export default function Home() {
       "name": "Do you provide airport taxi service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, we provide reliable airport taxi service to and from Mangalore Airport."
+        "text": "Yes, we offer reliable airport transfers to and from Mangalore Airport with on-time pickup and drop."
       }
     },
     {
@@ -31,7 +31,7 @@ export default function Home() {
       "name": "Are your taxi services available 24/7?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, our taxi services are available 24/7 including early morning and late night bookings."
+        "text": "Yes, our taxi services are available 24/7, including early morning and late night bookings"
       }
     },
     {
@@ -39,7 +39,7 @@ export default function Home() {
       "name": "Do you offer outstation trips from Udupi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, we provide outstation taxi services to Goa, Dharmasthala, Mangalore and nearby destinations."
+        "text": "Yes, we provide outstation taxi services to Goa, Dharmasthala, Mangalore and other nearby destinations."
       }
     },
     {
@@ -47,7 +47,7 @@ export default function Home() {
       "name": "What types of cars are available?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We offer Sedan, SUV and premium cars based on your travel needs."
+        "text": "We offer a range of vehicles including Sedan, SUV and premium cars depending on your travel needs."
       }
     }
   ]
@@ -109,11 +109,11 @@ const handleScroll = () => {
   <>
    <Helmet>
 
-    <title>Taxi in Udupi | Udupi Tours and Travels</title>
-
+    <title>Taxi Service in Udupi & Manipal | Airport Taxi, Local & Outstation Cabs</title>
+    <link rel="canonical" href="https://yourdomain.com/" />
 <meta 
   name="description" 
-  content="Book taxi service in Udupi & Manipal. Airport transfer, local rides, outstation trips. Call now for instant booking." 
+  content="Looking for a reliable taxi in Udupi or Manipal? Book airport taxi, local rides and outstation cabs with Udupi Tours and Travels. 24/7 service, professional drivers and instant booking confirmation." 
 />
 
   {/* FAQ Schema */}
@@ -145,6 +145,8 @@ const handleScroll = () => {
     animate={{ scale: 1 }}
     transition={{ duration: 2.5, ease: "easeOut" }}
     src="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+  alt="Taxi service in Udupi with premium car"
+  loading="eager"
     className="absolute w-full h-full object-cover"
   />
 
@@ -186,8 +188,14 @@ const handleScroll = () => {
       transition={{ delay: 0.2, duration: 0.7 }}
       className="text-base md:text-lg text-gray-300 max-w-xl mx-auto mb-10 leading-relaxed"
     >
-      Book reliable taxi service in Udupi for airport transfers, outstation trips, and local rides - trusted by hundreds of customers.
+      Book reliable taxi service in Udupi and Manipal for airport transfers, local rides and outstation trips. We provide the best taxi service in Udupi with professional drivers and instant booking.
     </motion.p>
+
+        <p className="text-sm text-gray-400 mt-4">
+  Serving Udupi, Manipal & Mangalore Airport with trusted taxi service
+</p>
+
+
 
     {/* CTA */}
     <motion.div
@@ -245,9 +253,9 @@ const handleScroll = () => {
       Why Customers Trust Us
     </p>
 
-    <h3 className="text-3xl md:text-4xl font-semibold leading-tight">
-      Trusted Taxi Service in Udupi
-    </h3>
+    <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
+  Trusted Taxi Service in Udupi
+</h2>
   </motion.div>
 
   {/* TRUST STATS (GLASS CARD STYLE) */}
@@ -363,9 +371,9 @@ const handleScroll = () => {
         Our Services
       </p>
 
-      <h3 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
-        Premium Taxi Services in Udupi
-      </h3>
+      <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
+  Premium Taxi Services in Udupi
+</h2>
 
       <p className="text-gray-500 text-sm md:text-base leading-relaxed">
         Whether it’s airport transfers, local rides, or outstation trips —
@@ -472,9 +480,9 @@ const handleScroll = () => {
         Popular Routes
       </p>
 
-      <h3 className="text-3xl md:text-4xl font-semibold mb-4">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Travel Routes from Udupi
-      </h3>
+      </h2>
 
       <p className="text-gray-500 text-sm md:text-base">
         Explore the most preferred routes with smooth and comfortable rides.
@@ -515,6 +523,8 @@ const handleScroll = () => {
             {/* IMAGE */}
             <img
               src={trip.img}
+              alt={`Taxi travel route ${trip.title} from Udupi`}
+              loading="lazy"
               className="absolute w-full h-full object-cover"
             />
 
@@ -594,9 +604,11 @@ const handleScroll = () => {
         >
 
           <img
-            src={trip.img}
-            className="absolute w-full h-full object-cover group-hover:scale-110 transition duration-700"
-          />
+  src={trip.img}
+  alt={`Taxi travel route ${trip.title} from Udupi`}
+  loading="lazy"
+  className="absolute w-full h-full object-cover group-hover:scale-110 transition duration-700"
+/>
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
 
@@ -640,12 +652,10 @@ const handleScroll = () => {
      {/* FLEET - ULTRA PREMIUM V2 */}
 <section id="fleet" className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
 
-  {/* subtle background glow */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(255,0,0,0.05),transparent_60%)]"></div>
 
   <div className="max-w-7xl mx-auto px-6 relative z-10">
 
-    {/* SECTION INTRO */}
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -655,33 +665,32 @@ const handleScroll = () => {
         Our Fleet
       </p>
 
-      <h3 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
+      <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
         Choose Your Comfortable Ride
-      </h3>
+      </h2>
 
       <p className="text-gray-500 text-sm md:text-base leading-relaxed">
         Well-maintained vehicles for every type of journey — from daily rides to long trips.
       </p>
     </motion.div>
 
-    {/* GRID */}
     <div className="grid md:grid-cols-3 gap-8">
 
       {[
         {
-          name: "Sedan",
-          desc: "Best for city travel, airport pickup and comfortable daily rides.",
-          img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
+          name: "Toyota Etios (Sedan)",
+          desc: "Comfortable sedan perfect for city rides, airport transfers and daily travel.",
+          img: "https://i.pinimg.com/736x/e6/20/ca/e620caf702e909bccbf4f19d7132f931.jpg",
         },
         {
-          name: "SUV",
-          desc: "Spacious option for families, groups and longer journeys.",
-          img: "https://images.unsplash.com/photo-1549921296-3a6b0c1f1f65",
+          name: "Maruti Ertiga (MPV)",
+          desc: "Spacious option ideal for families and group travel with extra comfort.",
+          img: "https://content.carlelo.com/media/models/Ertiga/base/ertiga-1.webp",
         },
         {
-          name: "Premium Sedan",
-          desc: "Extra comfort for special trips and smooth travel experience.",
-          img: "https://images.unsplash.com/photo-1502877338535-766e1452684a",
+          name: "Toyota Innova (SUV)",
+          desc: "Premium SUV for long-distance trips, airport travel and luxury comfort.",
+          img: "https://static-cdn.cars24.com/prod/new-car-cms/Toyota_Innova_Crysta_exterior_9_6c3f5e4a72.png",
         },
       ].map((car, i) => (
         <motion.div
@@ -693,17 +702,16 @@ const handleScroll = () => {
           className="group relative rounded-3xl overflow-hidden border border-gray-100 bg-white shadow-sm hover:shadow-2xl transition duration-500"
         >
 
-          {/* IMAGE */}
           <div className="relative h-56 overflow-hidden">
             <img
               src={car.img}
+              alt={`${car.name} taxi service in Udupi for airport and local travel`}
+              loading="lazy"
               className="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700"
             />
 
-            {/* gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-80"></div>
 
-            {/* title on image */}
             <div className="absolute bottom-4 left-4 text-white">
               <h4 className="text-lg font-semibold">
                 {car.name}
@@ -711,17 +719,14 @@ const handleScroll = () => {
             </div>
           </div>
 
-          {/* CONTENT */}
           <div className="p-6">
 
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               {car.desc}
             </p>
 
-            {/* divider */}
             <div className="h-px bg-gray-100 mb-5"></div>
 
-            {/* CTA */}
             <div className="flex items-center justify-between">
 
               <a
@@ -768,9 +773,9 @@ const handleScroll = () => {
         Customer Reviews
       </p>
 
-      <h3 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
-        Trusted by Hundreds of Happy Customers
-      </h3>
+      <h2 className="text-3xl md:text-4xl font-semibold">
+  Trusted Taxi Service in Udupi
+</h2>
 
       <p className="text-gray-500 text-sm md:text-base leading-relaxed">
         Real feedback from customers who have experienced our service.
@@ -860,9 +865,9 @@ const handleScroll = () => {
         Google Reviews
       </p>
 
-      <h3 className="text-3xl md:text-4xl font-semibold mb-4">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Rated 4.9 by Our Customers
-      </h3>
+      </h2>
 
       <p className="text-gray-500 text-sm md:text-base">
         See what our customers are saying about their experience with our taxi service.
@@ -946,15 +951,22 @@ const handleScroll = () => {
         About Our Service
       </p>
 
-      <h3 className="text-3xl md:text-4xl font-semibold mb-6 leading-tight">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-tight">
         Taxi Service in Udupi & Manipal – Airport, Local & Outstation Rides
-      </h3>
+      </h2>
 
       <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-        Udupi Tours and Travels offers professional taxi services across Udupi, Manipal, Kundapura and Mangalore Airport.
-        Whether you need an airport transfer, outstation cab to Goa, temple trip to Dharmasthala or a comfortable family ride,
-        our service is available 24/7 with experienced drivers and well-maintained vehicles.
-      </p>
+  Udupi Tours and Travels offers professional taxi services across 
+  <a href="/taxi-in-udupi" className="text-red-600">Udupi</a>, 
+  <a href="/taxi-in-manipal" className="text-red-600">Manipal</a>, 
+  Kundapura and 
+  <a href="/airport-taxi" className="text-red-600">Mangalore Airport</a>.  
+
+  We are known as one of the best taxi services in Udupi for airport taxi, local rides and outstation trips with professional drivers and well-maintained cars.  
+
+  Whether you need an airport transfer, outstation cab to Goa, temple trip to Dharmasthala or a comfortable family ride,
+  our service is available 24/7 with experienced drivers and reliable support.
+</p>
     </motion.div>
 
 
@@ -1040,9 +1052,9 @@ const handleScroll = () => {
         FAQs
       </p>
 
-      <h3 className="text-3xl md:text-4xl font-semibold mb-4">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Frequently Asked Questions
-      </h3>
+      </h2>
 
       <p className="text-gray-500 text-sm md:text-base">
         Everything you need to know about our taxi service in Udupi.
@@ -1140,7 +1152,7 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="text-4xl md:text-5xl font-semibold mb-6 leading-tight"
     >
-      Travel with Udupi Tours and Travels
+      Best Taxi Service in Udupi & Manipal
     </motion.h3>
 
     {/* SUBTEXT */}
@@ -1150,7 +1162,7 @@ const handleScroll = () => {
       transition={{ delay: 0.2 }}
       className="text-gray-300 mb-10 text-base md:text-lg leading-relaxed"
     >
-      Get instant booking confirmation in minutes. Safe, reliable and available 24/7 for all your travel needs.
+      Get instant booking confirmation in minutes for taxi service in Udupi, Manipal and Mangalore Airport. Safe, reliable and available 24/7 for all your travel needs.
     </motion.p>
 
     {/* CTA BUTTONS */}

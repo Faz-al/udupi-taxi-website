@@ -6,11 +6,52 @@ export default function TaxiUdupi() {
     <div className="bg-white text-black">
 
       <Helmet>
-        <title>Taxi in Udupi | Best Cab Service 24/7 | Airport & Outstation</title>
+        <title>Taxi in Udupi | 24/7 Cab Service | Airport & Outstation Taxi</title>
         <meta
           name="description"
           content="Book the best taxi in Udupi with 24/7 service. Reliable cabs for airport transfer, local travel, temple trips & outstation rides to Goa, Mangalore and more."
         />
+
+        <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the cost of taxi in Udupi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Taxi fares in Udupi depend on distance and vehicle type. We offer affordable and transparent pricing with no hidden charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide taxi for temple trips in Udupi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide taxi services for temple visits including Sri Krishna Temple, Kollur Mookambika, and nearby destinations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is taxi service available 24/7 in Udupi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our taxi service in Udupi is available 24/7, including early morning and late-night bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide outstation taxi from Udupi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide outstation taxi service from Udupi to destinations like Goa, Dharmasthala, Bangalore, and more."
+      }
+    }
+  ]
+})}
+</script>
       </Helmet>
 
       {/* HERO */}
@@ -38,6 +79,35 @@ export default function TaxiUdupi() {
           Book Taxi in Udupi
         </a>
       </section>
+
+      {/* IMAGE STRIP */}
+<section className="py-16 max-w-6xl mx-auto px-6">
+  <div className="grid md:grid-cols-3 gap-6">
+
+    <img 
+      src="https://images.unsplash.com/photo-1624454002302-6cdd3a4f9a8e"
+      alt="Taxi service in Udupi near Sri Krishna Temple"
+      loading="lazy"
+      className="rounded-2xl object-cover h-56 w-full" 
+    />
+
+    <img 
+      src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
+      alt="Cab service in Udupi near Malpe Beach"
+      loading="lazy"
+      className="rounded-2xl object-cover h-56 w-full" 
+    />
+
+    <img 
+      src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+      alt="Outstation taxi service from Udupi to nearby destinations"
+      loading="lazy"
+      className="rounded-2xl object-cover h-56 w-full" 
+    />
+
+  </div>
+</section>
+
 
       {/* SERVICES LIST */}
       <section className="py-28 max-w-7xl mx-auto px-6">
@@ -152,30 +222,117 @@ export default function TaxiUdupi() {
 
       </section>
 
-      {/* SEO CONTENT */}
-      <section className="py-28 max-w-4xl mx-auto px-6 text-center">
+{/* SEO CONTENT */}
+<section className="py-28 max-w-4xl mx-auto px-6 text-center">
 
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="text-3xl font-bold mb-6"
-        >
-          Best Taxi Service in Udupi for Local & Airport Travel
-        </motion.h2>
+  <motion.h2
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    className="text-3xl font-bold mb-6"
+  >
+    Best Taxi Service in Udupi for Local Travel & Outstation Trips
+  </motion.h2>
 
-        <p className="text-gray-600 leading-7 mb-6">
-          Udupi is one of Karnataka’s most popular travel destinations, known for its temples, beaches, and nearby attractions. Whether you are visiting Sri Krishna Temple, planning a trip to Malpe Beach, or traveling to Manipal, having a reliable taxi service in Udupi makes your journey smooth and comfortable.
-        </p>
+  <p className="text-gray-600 leading-7 mb-6">
+    Udupi is known for its temples, beaches, and nearby travel destinations. Whether you're visiting Sri Krishna Temple, Malpe Beach, or planning a trip to nearby places, having a reliable taxi in Udupi makes your journey comfortable and stress-free.
+  </p>
 
-        <p className="text-gray-600 leading-7 mb-6">
-          Our Udupi taxi service is trusted for airport transfers to Mangalore International Airport, outstation trips to Goa and Dharmasthala, and local rides across Udupi and Manipal. We focus on punctuality, clean vehicles, and professional drivers to deliver a premium travel experience.
-        </p>
+  <p className="text-gray-600 leading-7 mb-6">
+    Our taxi service in Udupi covers local travel, temple trips, and outstation routes including Goa, Dharmasthala, and Bangalore. For airport transfers, you can book our dedicated{" "}
+    <a href="/airport-taxi" className="text-red-600 font-medium hover:underline">
+      airport taxi service from Udupi
+    </a>{" "}
+    with on-time pickup and smooth travel.
+  </p>
 
-        <p className="text-gray-600 leading-7">
-          If you are looking for the best taxi in Udupi with affordable pricing and reliable service, we ensure every ride is comfortable, safe, and on time.
-        </p>
+  <p className="text-gray-600 leading-7">
+    We also provide quick access to nearby areas like{" "}
+    <a href="/taxi-in-manipal" className="text-red-600 font-medium hover:underline">
+      Manipal taxi service
+    </a>{" "}
+    with clean vehicles, professional drivers, and reliable service.
+  </p>
 
-      </section>
+  <p className="text-gray-600 leading-7 mt-6">
+  If you are searching for the best taxi in Udupi, our service ensures reliable, safe, and comfortable travel every time.
+</p>
+
+</section>
+
+
+
+{/* FAQ SECTION */}
+<section className="py-20 max-w-4xl mx-auto px-6">
+  <h3 className="text-2xl font-semibold text-center mb-10">
+    Frequently Asked Questions – Taxi in Udupi
+  </h3>
+
+  <div className="space-y-6">
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        What is the cost of taxi in Udupi?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Taxi fares in Udupi depend on distance and vehicle type. We offer affordable and transparent pricing with no hidden charges.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Do you provide taxi for temple trips in Udupi?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we provide taxi services for temple visits including Sri Krishna Temple, Kollur Mookambika, and nearby destinations.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Is taxi service available 24/7 in Udupi?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, our taxi service in Udupi is available 24/7, including early morning and late-night bookings.
+      </p>
+    </div>
+
+    <div className="border-b pb-4">
+      <h4 className="font-medium mb-2">
+        Do you provide outstation taxi from Udupi?
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Yes, we provide outstation taxi service from Udupi to destinations like Goa, Dharmasthala, Bangalore, and more.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+{/* RELATED SERVICES */}
+<section className="py-20 max-w-5xl mx-auto px-6 text-center">
+  <h3 className="text-2xl font-semibold mb-8">
+    Explore Our Taxi Services
+  </h3>
+
+  <div className="flex flex-wrap justify-center gap-4">
+
+    <a href="/taxi-in-udupi" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Taxi in Udupi
+    </a>
+
+    <a href="/taxi-in-manipal" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Taxi in Manipal
+    </a>
+
+    <a href="/airport-taxi" className="px-6 py-3 border rounded-full hover:bg-gray-100 transition">
+      Airport Taxi Service
+    </a>
+
+  </div>
+</section>
 
       {/* CTA */}
       <section className="py-28 bg-black text-white text-center">
