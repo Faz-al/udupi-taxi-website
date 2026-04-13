@@ -1,5 +1,6 @@
 import { client } from "../lib/sanity";
 
+
 export default async function handler(req, res) {
   try {
     const baseUrl = "https://www.udupitaxi.co.in";
