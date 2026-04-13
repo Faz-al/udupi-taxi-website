@@ -63,20 +63,19 @@ export default function Services() {
                 </h3>
 
  <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
-  {service.excerpt ||
-    (Array.isArray(service.description)
-      ? service.description
-          .filter(block => block._type === "block")
-          .map(block =>
-            block.children
-              ?.filter(child => child._type === "span")
-              .map(child => child.text)
-              .join("")
-          )
-          .join(" ")
-      : typeof service.description === "string"
-      ? service.description
-      : "View details")}
+  {typeof service.description === "string"
+    ? service.description
+    : Array.isArray(service.description)
+    ? service.description
+        .filter(block => block._type === "block")
+        .map(block =>
+          block.children
+            ?.filter(child => child._type === "span")
+            .map(child => child.text)
+            .join("")
+        )
+        .join(" ")
+    : "View details"}
 </p>
 
                 <span className="inline-flex items-center text-sm font-medium text-red-600">
