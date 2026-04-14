@@ -902,32 +902,40 @@ const handleScroll = () => {
       </p>
     </motion.div>
 
-    {/* MAP EMBED */}
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
-      className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200"
-    >
+   <motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2 }}
+  className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200 bg-white"
+>
 
-      <h2 className="text-2xl font-semibold mb-6">
-  Our Location in Udupi
-</h2>
+  {/* HEADER */}
+  <div className="px-6 pt-6 text-center">
+    <h2 className="text-2xl font-semibold">
+      Our Location in Udupi
+    </h2>
+  </div>
 
-      <iframe
-  title="Udupi Travels location on Google Maps"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.1217637077625!2d74.74440177570327!3d13.342700987007873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb91cdaf9f2d%3A0x6a8f565f29b6097a!2sUdupi%20Travels!5e0!3m2!1sen!2sin!4v1776156253964!5m2!1sen!2sin"
-  className="w-full h-[420px] md:h-[480px]"
-  style={{ border: 0 }}
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-></iframe>
+  {/* MAP */}
+  <iframe
+    title="Udupi Travels location on Google Maps"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.1217637077625!2d74.74440177570327!3d13.342700987007873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb91cdaf9f2d%3A0x6a8f565f29b6097a!2sUdupi%20Travels!5e0!3m2!1sen!2sin!4v1776156253964!5m2!1sen!2sin"
+    className="w-full h-[420px] md:h-[480px] mt-4 bg-gray-100"
+    style={{ border: 0 }}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
 
-<p className="text-gray-700 mt-4 text-sm">
-  Visit our location in Udupi for reliable taxi services. We serve Udupi, Manipal and nearby areas with airport taxi, local rides and outstation trips.
-</p>
 
-    </motion.div>
+  {/* TEXT */}
+  <div className="px-6 py-6 text-center">
+    <p className="text-gray-700 text-sm leading-relaxed max-w-2xl mx-auto">
+      Visit our location in Udupi for reliable taxi services across Udupi and Manipal. We provide airport taxi to Mangalore, local rides and outstation trips with professional drivers and comfortable vehicles.
+    </p>
+  </div>
+  
+
+</motion.div>
 
     {/* CTA */}
     <motion.div
@@ -979,11 +987,11 @@ const handleScroll = () => {
       </h2>
 
       <p className="text-gray-700 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-  Udupi Tours and Travels offers professional taxi services across 
-<a href="/taxi-in-udupi">Udupi</a>
-<a href="/taxi-in-manipal">Manipal</a>
-  Kundapura and 
-<a href="/airport-taxi">Mangalore Airport</a>
+  Udupi Tours and Travels offers professional taxi services across {" "}
+<a href="/taxi-in-udupi">Udupi</a>,{" "}
+<a href="/taxi-in-manipal">Manipal</a>,{" "}
+Kundapura and{" "}
+<a href="/airport-taxi">Mangalore Airport</a>.{" "}
   We are known as one of the best taxi services in Udupi for airport taxi, local rides and outstation trips with professional drivers and well-maintained cars.  
 
   Whether you need an airport transfer, outstation cab to Goa, temple trip to Dharmasthala or a comfortable family ride,
@@ -991,7 +999,7 @@ const handleScroll = () => {
 </p>
     </motion.div>
 
-   <section className="pt-10 pb-24 text-center">
+   <section className="pt-16 pb-24 text-center">
   <div className="max-w-3xl mx-auto px-6">
 
     <div className="w-12 h-[2px] bg-red-600 mx-auto mb-6"></div>
