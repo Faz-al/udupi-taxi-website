@@ -57,7 +57,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "TravelAgency"],
   "name": "Udupi Tours and Travels",
-  "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a",
+  "image": "https://www.udupitaxi.co.in/og-image.jpg",
   "telephone": "+91 9901159323",
   "areaServed": {
     "@type": "Place",
@@ -111,13 +111,12 @@ const handleScroll = () => {
    <Helmet>
 
     <title>Taxi Service in Udupi & Manipal | Airport Taxi, Local & Outstation Cabs</title>
-    <link rel="canonical" href="https://www.udupitaxi.co.in" />
+<link rel="canonical" href="https://www.udupitaxi.co.in" />
 <meta 
   name="description" 
   content="Looking for a reliable taxi in Udupi or Manipal? Book airport taxi, local rides and outstation cabs with Udupi Tours and Travels. 24/7 service, professional drivers and instant booking confirmation." 
 />
 
-<link rel="preconnect" href="https://images.unsplash.com" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
@@ -146,15 +145,17 @@ const handleScroll = () => {
 
   {/* Background Image */}
   <motion.img
-    initial={{ scale: 1.1 }}
-    animate={{ scale: 1 }}
-    transition={{ duration: 2.5, ease: "easeOut" }}
-    src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format"
+  initial={{ scale: 1.1 }}
+  animate={{ scale: 1 }}
+  transition={{ duration: 2.5, ease: "easeOut" }}
+  src="/hero.jpg"
   alt="Taxi service in Udupi with premium car"
   loading="eager"
   fetchpriority="high"
-    className="absolute w-full h-full object-cover"
-  />
+  width="1920"
+  height="1080"
+  className="absolute w-full h-full object-cover"
+/>
 
   {/* Softer Overlay */}
   <div className="absolute w-full h-full bg-black/60"></div>
@@ -197,7 +198,7 @@ const handleScroll = () => {
       Book reliable taxi service in Udupi and Manipal for airport transfers, local rides and outstation trips. We provide the best taxi service in Udupi with professional drivers and instant booking.
     </motion.p>
 
-        <p className="text-sm text-gray-400 mt-4">
+      <p className="text-sm text-gray-300 mt-4">
   Serving Udupi, Manipal & Mangalore Airport with trusted taxi service
 </p>
 
@@ -230,7 +231,7 @@ const handleScroll = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.6 }}
-      className="mt-10 flex flex-wrap justify-center gap-6 text-xs text-gray-400 tracking-wide"
+      className="mt-10 flex flex-wrap justify-center gap-6 text-xs text-gray-300 tracking-wide"
     >
       <span>500+ Customers</span>
       <span>•</span>
@@ -255,7 +256,7 @@ const handleScroll = () => {
     whileInView={{ opacity: 1, y: 0 }}
     className="max-w-3xl mx-auto text-center mb-20 px-6 relative z-10"
   >
-    <p className="text-xs tracking-[0.35em] uppercase text-gray-400 mb-4">
+    <p className="text-xs tracking-[0.35em] uppercase text-gray-700 mb-4">
       Why Customers Trust Us
     </p>
 
@@ -285,7 +286,7 @@ const handleScroll = () => {
             {item.number}
           </h3>
 
-          <p className="text-gray-400 text-xs uppercase tracking-wider">
+          <p className="text-gray-700 text-xs uppercase tracking-wider">
             {item.label}
           </p>
         </motion.div>
@@ -297,13 +298,13 @@ const handleScroll = () => {
   {/* WHY CHOOSE US */}
   <div className="max-w-7xl mx-auto px-6 relative z-10">
 
-    <motion.h3
+    <motion.h2
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       className="text-3xl md:text-4xl font-semibold text-center mb-16"
     >
       Why Choose Our Taxi Service
-    </motion.h3>
+    </motion.h2>
 
     <div className="grid md:grid-cols-4 gap-8">
 
@@ -342,11 +343,11 @@ const handleScroll = () => {
             {/* accent */}
             <div className="w-12 h-[2px] bg-red-600 mb-5"></div>
 
-            <h4 className="text-lg font-semibold mb-2">
+            <h3 className="text-lg font-semibold mb-2">
               {item.title}
-            </h4>
+            </h3>
 
-            <p className="text-gray-500 text-sm leading-relaxed">
+            <p className="text-gray-700 text-sm leading-relaxed">
               {item.desc}
             </p>
 
@@ -373,15 +374,15 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="max-w-3xl mx-auto text-center mb-20"
     >
-      <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">
-        Our Services
+      <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
+         Our Services
       </p>
 
       <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
   Premium Taxi Services in Udupi
 </h2>
 
-      <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+      <p className="text-gray-700 text-sm md:text-base leading-relaxed">
         Whether it’s airport transfers, local rides, or outstation trips —
         we provide reliable and comfortable taxi services tailored to your needs.
       </p>
@@ -430,12 +431,12 @@ const handleScroll = () => {
             <div className="w-12 h-[2px] bg-red-600 mb-6"></div>
 
             {/* TITLE */}
-            <h4 className="text-xl md:text-2xl font-semibold mb-3">
+            <h3 className="text-xl md:text-2xl font-semibold mb-3">
               {service.title}
-            </h4>
+            </h3>
 
             {/* DESC */}
-            <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-8 max-w-md">
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-8 max-w-md">
               {service.desc}
             </p>
 
@@ -482,15 +483,15 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="max-w-3xl mx-auto text-center mb-16"
     >
-      <p className="text-xs tracking-[0.35em] uppercase text-gray-400 mb-4">
-        Popular Routes
+      <p className="text-xs tracking-[0.35em] uppercase text-gray-700 mb-4">
+         Popular Routes
       </p>
 
       <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Travel Routes from Udupi
       </h2>
 
-      <p className="text-gray-500 text-sm md:text-base">
+      <p className="text-gray-700 text-sm md:text-base">
         Explore the most preferred routes with smooth and comfortable rides.
       </p>
     </motion.div>
@@ -508,17 +509,18 @@ const handleScroll = () => {
           {
             title: "Udupi to Goa",
             tag: "Most Popular",
-            img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format",
+            img: "/goa.jpg"
+,
           },
           {
             title: "Dharmasthala Temple",
             tag: "Temple Trip",
-            img: "https://images.unsplash.com/photo-1665003815164-8f5bc853ef44?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            img: "/dharmasthala.jpg",
           },
           {
             title: "Coastal Family Tours",
             tag: "Family Travel",
-            img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format",
+            img: "/coastal.jpg",
           },
         ].map((trip, i) => (
           <div
@@ -531,6 +533,8 @@ const handleScroll = () => {
               src={trip.img}
               alt={`Taxi travel route ${trip.title} from Udupi`}
               loading="lazy"
+              width="800"
+              height="500"
               className="absolute w-full h-full object-cover"
             />
 
@@ -549,15 +553,15 @@ const handleScroll = () => {
 </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-white mb-2">
-                  {trip.title}
-                </h4>
+                <h3 className="text-xl font-semibold text-white mb-2">
+  {trip.title}
+</h3>
 
                 <div className="flex justify-between items-center">
                   <span className="text-white text-sm group-hover:text-red-400 transition">
   Book Trip →
 </span>
-                  <span className="text-xs text-gray-400">24/7</span>
+                  <span className="text-xs text-gray-300">24/7</span>
                 </div>
               </div>
 
@@ -590,17 +594,17 @@ const handleScroll = () => {
         {
           title: "Udupi to Goa",
           tag: "Most Popular",
-          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format",
+          img: "/goa.jpg"
         },
         {
           title: "Dharmasthala Temple",
           tag: "Temple Trip",
-          img: "https://images.unsplash.com/photo-1665003815164-8f5bc853ef44?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          img: "/dharmasthala.jpg",
         },
         {
           title: "Coastal Family Tours",
           tag: "Family Travel",
-          img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format",
+          img: "/coastal.jpg",
         },
       ].map((trip, i) => (
         <motion.div
@@ -613,6 +617,8 @@ const handleScroll = () => {
   src={trip.img}
   alt={`Taxi travel route ${trip.title} from Udupi`}
   loading="lazy"
+  width="800"
+  height="500"
   className="absolute w-full h-full object-cover group-hover:scale-110 transition duration-700"
 />
 
@@ -628,15 +634,15 @@ const handleScroll = () => {
 </div>
 
             <div>
-              <h4 className="text-xl font-semibold text-white mb-2">
-                {trip.title}
-              </h4>
+              <h3 className="text-xl font-semibold text-white mb-2">
+  {trip.title}
+</h3>
 
               <div className="flex justify-between items-center">
                <span className="text-white text-sm group-hover:text-red-400 transition">
   Book Trip →
 </span>
-                <span className="text-xs text-gray-400">24/7</span>
+                <span className="text-xs text-gray-300">24/7</span>
               </div>
             </div>
 
@@ -667,15 +673,15 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="max-w-3xl mx-auto text-center mb-20"
     >
-      <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">
-        Our Fleet
+      <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
+         Our Fleet
       </p>
 
       <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
         Choose Your Comfortable Ride
       </h2>
 
-      <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+      <p className="text-gray-700 text-sm md:text-base leading-relaxed">
         Well-maintained vehicles for every type of journey — from daily rides to long trips.
       </p>
     </motion.div>
@@ -710,24 +716,26 @@ const handleScroll = () => {
 
           <div className="relative h-56 overflow-hidden">
             <img
-              src={car.img}
-              alt={`${car.name} taxi service in Udupi for airport and local travel`}
-              loading="lazy"
-              className="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700"
-            />
+  src={car.img}
+  alt={`${car.name} taxi service in Udupi for airport and local travel`}
+  loading="lazy"
+  width="600"
+  height="400"
+  className="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700"
+/>
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-80"></div>
 
             <div className="absolute bottom-4 left-4 text-white">
-              <h4 className="text-lg font-semibold">
-                {car.name}
-              </h4>
+              <h3 className="text-lg font-semibold">
+  {car.name}
+</h3>
             </div>
           </div>
 
           <div className="p-6">
 
-            <p className="text-gray-500 text-sm leading-relaxed mb-6">
+            <p className="text-gray-700 text-sm leading-relaxed mb-6">
               {car.desc}
             </p>
 
@@ -745,9 +753,9 @@ const handleScroll = () => {
                 </span>
               </a>
 
-              <div className="text-xs text-gray-400">
-                Available 24/7
-              </div>
+              <div className="text-xs text-gray-700">
+  Available 24/7
+</div>
 
             </div>
 
@@ -775,15 +783,15 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="max-w-3xl mx-auto text-center mb-20"
     >
-      <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">
-        Customer Reviews
+      <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
+          Customer Reviews
       </p>
 
       <h2 className="text-3xl md:text-4xl font-semibold">
   Trusted Taxi Service in Udupi
 </h2>
 
-      <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+      <p className="text-gray-700 text-sm md:text-base leading-relaxed">
         Real feedback from customers who have experienced our service.
       </p>
     </motion.div>
@@ -818,9 +826,9 @@ const handleScroll = () => {
           <div className="flex items-center justify-between mb-4">
 
             {/* NAME */}
-            <h4 className="font-semibold text-sm tracking-wide">
-              {review.name}
-            </h4>
+            <p className="font-semibold text-sm tracking-wide">
+  {review.name}
+</p>
 
             {/* RATING */}
             <div className="text-yellow-400 text-sm tracking-wider">
@@ -830,18 +838,17 @@ const handleScroll = () => {
           </div>
 
           {/* REVIEW TEXT */}
-          <p className="text-gray-600 text-sm leading-relaxed mb-6">
+          <p className="text-gray-700 text-sm leading-relaxed mb-6">
             “{review.text}”
           </p>
 
           {/* FOOTER */}
-          <div className="flex items-center justify-between text-xs text-gray-400">
-
+          <div className="flex items-center justify-between text-xs text-gray-700">
             <span>Verified Customer</span>
 
-            <span className="group-hover:text-black transition">
-              Google Review
-            </span>
+            <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
+                Google Reviews
+            </p>
 
           </div>
 
@@ -867,15 +874,15 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="mb-16"
     >
-      <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">
-        Google Reviews
+      <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
+         Google Reviews
       </p>
 
       <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Rated 4.9 by Our Customers
       </h2>
 
-      <p className="text-gray-500 text-sm md:text-base">
+      <p className="text-gray-700 text-sm md:text-base">
         See what our customers are saying about their experience with our taxi service.
       </p>
     </motion.div>
@@ -892,7 +899,7 @@ const handleScroll = () => {
         ★★★★★
       </div>
 
-      <p className="text-gray-400 text-sm">
+      <p className="text-gray-700 text-sm">
         Based on 100+ Google Reviews
       </p>
     </motion.div>
@@ -954,7 +961,7 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="max-w-4xl mx-auto text-center mb-20"
     >
-      <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">
+      <p className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-4">
         About Our Service
       </p>
 
@@ -962,7 +969,7 @@ const handleScroll = () => {
         Taxi Service in Udupi & Manipal – Airport, Local & Outstation Rides
       </h2>
 
-      <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+      <p className="text-gray-700 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
   Udupi Tours and Travels offers professional taxi services across 
   <a href="/taxi-in-udupi" className="text-red-600">Udupi</a>, 
   <a href="/taxi-in-manipal" className="text-red-600">Manipal</a>, 
@@ -985,7 +992,7 @@ const handleScroll = () => {
         whileInView={{ opacity: 1, y: 0 }}
         className="text-center mb-14"
       >
-        <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">
+        <p className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-4">
           Travel Guides
         </p>
 
@@ -1013,11 +1020,11 @@ const handleScroll = () => {
             {/* accent */}
             <div className="w-10 h-[2px] bg-red-600 mb-4"></div>
 
-            <h4 className="font-semibold text-lg mb-3">
+            <h3 className="font-semibold text-lg mb-3">
               {blog}
-            </h4>
+            </h3>
 
-            <p className="text-gray-500 text-sm mb-6 leading-relaxed">
+            <p className="text-gray-700 text-sm mb-6 leading-relaxed">
               Read useful travel tips, fare guides and insights to plan your journey better.
             </p>
 
@@ -1055,7 +1062,7 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="text-center mb-16"
     >
-      <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4">
+      <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
         FAQs
       </p>
 
@@ -1063,7 +1070,7 @@ const handleScroll = () => {
         Frequently Asked Questions
       </h2>
 
-      <p className="text-gray-500 text-sm md:text-base">
+      <p className="text-gray-700 text-sm md:text-base">
         Everything you need to know about our taxi service in Udupi.
       </p>
     </motion.div>
@@ -1103,9 +1110,9 @@ const handleScroll = () => {
 
           <div className="flex items-start justify-between gap-4">
 
-            <h4 className="font-medium text-base md:text-lg">
+            <h3 className="font-medium text-base md:text-lg">
               {item.q}
-            </h4>
+            </h3>
 
             <span className="text-gray-300 group-hover:text-red-600 transition">
               +
@@ -1113,7 +1120,7 @@ const handleScroll = () => {
 
           </div>
 
-          <p className="text-gray-500 text-sm mt-3 leading-relaxed">
+          <p className="text-gray-700 text-sm mt-3 leading-relaxed">
             {item.a}
           </p>
 
@@ -1148,7 +1155,7 @@ const handleScroll = () => {
     <motion.p
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4"
+      className="text-xs tracking-[0.3em] uppercase text-gray-300 mb-4"
     >
       Book Your Ride Now
     </motion.p>
@@ -1201,7 +1208,7 @@ const handleScroll = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.6 }}
-      className="mt-8 text-sm text-gray-400"
+      className="mt-8 text-sm text-gray-300"
     >
       ⚡ Quick response • 500+ happy customers • 4.9 rating
     </motion.div>

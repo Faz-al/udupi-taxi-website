@@ -68,7 +68,7 @@ export default function TaxiUdupi() {
           Looking for the best taxi in Udupi? We provide professional cab services for local travel, airport transfers, temple visits, and outstation trips with clean vehicles and experienced drivers.
         </p>
 
-        <p className="text-gray-500 max-w-xl mx-auto mb-8">
+        <p className="text-gray-700 max-w-xl mx-auto mb-8">
           Serving Udupi, Manipal, Malpe Beach, Kaup Beach, and nearby areas with on-time pickups and smooth travel experience.
         </p>
 

@@ -15,11 +15,11 @@ export default function Footer() {
 
             <div className="w-10 h-[2px] bg-red-600 mb-4"></div>
 
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
               Premium taxi service in Udupi & Manipal offering reliable airport transfers, local rides and comfortable travel experience.
             </p>
 
-            <p className="text-gray-500 text-xs mt-4">
+            <p className="text-gray-700 text-xs mt-4">
               Available 24/7 • Trusted by 500+ customers
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function Footer() {
               Services
             </h4>
 
-            <ul className="space-y-3 text-sm text-gray-400">
+            <ul className="space-y-3 text-sm text-gray-600">
 
               <li>
                 <a href="/taxi-in-udupi" className="hover:text-white transition">
@@ -59,7 +59,7 @@ export default function Footer() {
               Quick Links
             </h4>
 
-            <ul className="space-y-3 text-sm text-gray-400">
+            <ul className="space-y-3 text-sm text-gray-600">
 
               <li>
                 <a href="/services" className="hover:text-white transition">
@@ -88,7 +88,7 @@ export default function Footer() {
               Contact
             </h4>
 
-            <div className="space-y-3 text-sm text-gray-400">
+            <div className="space-y-3 text-sm text-gray-600">
 
               <a href="tel:+919901159323" className="block hover:text-white transition">
                 📞 +91 9901159323
@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="h-px bg-white/10 mb-6"></div>
 
         {/* BOTTOM BAR */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-3">
+        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-700 gap-3">
 
           <p>
             © 2026 Udupi Tours & Travel. All rights reserved.
@@ -119,7 +119,7 @@ export default function Footer() {
           {/* YOUR AGENCY CREDIT */}
           <p className="text-gray-600">
             Website by{" "}
-            <span className="text-gray-400 hover:text-white transition">
+            <span className="text-gray-600 hover:text-white transition">
               Acid House Labs
             </span>
           </p>

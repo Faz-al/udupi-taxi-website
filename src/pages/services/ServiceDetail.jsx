@@ -135,7 +135,7 @@ export default function ServiceDetail() {
               whileHover={{ y: -5 }}
             >
               <h3 className="font-semibold mb-2">Professional Drivers</h3>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-700 text-sm">
                 Experienced and verified chauffeurs ensuring safe and smooth travel.
               </p>
             </motion.div>
@@ -145,7 +145,7 @@ export default function ServiceDetail() {
               whileHover={{ y: -5 }}
             >
               <h3 className="font-semibold mb-2">On-Time Pickup</h3>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-700 text-sm">
                 Reliable scheduling with punctual service every time.
               </p>
             </motion.div>
@@ -155,7 +155,7 @@ export default function ServiceDetail() {
               whileHover={{ y: -5 }}
             >
               <h3 className="font-semibold mb-2">Premium Comfort</h3>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-700 text-sm">
                 Clean, well-maintained vehicles for a luxury experience.
               </p>
             </motion.div>

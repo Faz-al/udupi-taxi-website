@@ -69,7 +69,7 @@ export default function TaxiManipal() {
           Looking for the best taxi in Manipal? We provide reliable cab services for students, hospital visits, airport transfers, and outstation travel with clean vehicles and professional drivers.
         </p>
 
-        <p className="text-gray-500 max-w-xl mx-auto mb-8">
+        <p className="text-gray-700 max-w-xl mx-auto mb-8">
           Serving MIT, KMC Hospital, Udupi, and nearby areas with on-time pickup and comfortable travel.
         </p>
 

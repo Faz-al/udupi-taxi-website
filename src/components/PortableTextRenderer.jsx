@@ -24,7 +24,7 @@ export default function PortableTextRenderer({ value }) {
                   className="w-full rounded-2xl shadow-md object-cover"
                 />
                 {value?.alt && (
-                  <p className="text-sm text-gray-500 text-center mt-3">
+                  <p className="text-sm text-gray-700 text-center mt-3">
                     {value.alt}
                   </p>
                 )}

@@ -69,7 +69,7 @@ export default function BlogDetail() {
 {/* DATE */}
 <motion.p
   variants={fadeUp}
-  className="text-gray-400 mt-3 text-sm"
+  className="text-gray-600 mt-3 text-sm"
 >
   {blog._createdAt &&
   new Date(blog._createdAt).toLocaleDateString("en-IN", {
@@ -118,21 +118,21 @@ export default function BlogDetail() {
 
             <div>
               <h3 className="font-semibold mb-2">Reliable Travel</h3>
-              <p className="text-gray-500">
+              <p className="text-gray-700">
                 Trusted taxi services across Udupi with professional drivers.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold mb-2">24/7 Availability</h3>
-              <p className="text-gray-500">
+              <p className="text-gray-700">
                 Book rides anytime with quick response and smooth service.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold mb-2">Premium Experience</h3>
-              <p className="text-gray-500">
+              <p className="text-gray-700">
                 Clean vehicles and comfortable rides for every journey.
               </p>
             </div>

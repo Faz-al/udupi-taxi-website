@@ -28,7 +28,7 @@ export default function Services() {
         <h1 className="text-5xl font-semibold tracking-tight mb-4">
           Our Taxi Services
         </h1>
-        <p className="text-gray-500 max-w-2xl mx-auto">
+        <p className="text-gray-700 max-w-2xl mx-auto">
           Premium travel solutions designed for comfort, reliability, and class.
         </p>
       </div>
@@ -62,7 +62,7 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-<p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+<p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-2">
   {service.excerpt ||
     (Array.isArray(service.description)
       ? service.description

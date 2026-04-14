@@ -39,7 +39,7 @@ export default function Blogs() {
         <h1 className="text-5xl font-semibold tracking-tight mb-4">
           Insights & Travel Stories
         </h1>
-        <p className="text-gray-500 max-w-2xl mx-auto">
+        <p className="text-gray-700 max-w-2xl mx-auto">
           Explore travel tips, taxi insights, and premium ride experiences.
         </p>
       </div>
@@ -115,7 +115,7 @@ export default function Blogs() {
                     {blog.title}
                   </h3>
 
-                  <p className="text-gray-500 text-sm line-clamp-2">
+                  <p className="text-gray-700 text-sm line-clamp-2">
                     {blog.content?.[0]?.children?.[0]?.text || "Read more..."}
                   </p>
 

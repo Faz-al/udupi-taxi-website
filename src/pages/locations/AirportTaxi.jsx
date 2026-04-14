@@ -69,7 +69,7 @@ export default function AirportTaxi() {
           Looking for a reliable airport taxi in Udupi or Manipal? We provide on-time airport transfers to Mangalore International Airport with professional drivers and comfortable vehicles.
         </p>
 
-        <p className="text-gray-500 mb-8">
+        <p className="text-gray-700 mb-8">
           Serving Udupi, Manipal, and nearby areas with early morning pickups and smooth travel experience.
         </p>
 
