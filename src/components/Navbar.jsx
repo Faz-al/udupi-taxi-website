@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* LOGO */}
         <Link to="/" className="flex items-center">
   <img
-    src="/logo.png"
+    src="/logo.webp"
     alt="Udupi Tours and Travels"
     className="h-12 w-auto object-contain"
   />
