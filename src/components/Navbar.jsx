@@ -24,11 +24,13 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link to="/" className="flex items-center">
-  <img
-    src="/logo.webp"
-    alt="Udupi Tours and Travels"
-    className="h-12 w-auto object-contain"
-  />
+  <img 
+  src="/logo.webp"
+  alt="Udupi Tours and Travels"
+  width="120"
+  height="48"
+  className="h-12 w-auto object-contain"
+/>
 </Link>
 
         {/* DESKTOP LINKS */}
