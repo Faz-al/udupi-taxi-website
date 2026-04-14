@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useRef } from "react"
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
@@ -60,10 +59,9 @@ const localBusinessSchema = {
   "image": "https://www.udupitaxi.co.in/og-image.jpg",
   "telephone": "+91 9901159323",
   "areaServed": {
-    "@type": "Place",
-    "name": "Udupi, Manipal, Karnataka",
-    
-  },
+  "@type": "Place",
+  "name": "Udupi, Manipal, Karnataka"
+},
 
   "aggregateRating": {
   "@type": "AggregateRating",
@@ -117,7 +115,6 @@ const handleScroll = () => {
   content="Looking for a reliable taxi in Udupi or Manipal? Book airport taxi, local rides and outstation cabs with Udupi Tours and Travels. 24/7 service, professional drivers and instant booking confirmation." 
 />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
   {/* FAQ Schema */}
@@ -148,7 +145,8 @@ const handleScroll = () => {
   initial={{ scale: 1.1 }}
   animate={{ scale: 1 }}
   transition={{ duration: 2.5, ease: "easeOut" }}
-  src="/hero.jpg"
+  src="/hero.webp"
+  decoding="async"
   alt="Taxi service in Udupi with premium car"
   loading="eager"
   fetchpriority="high"
@@ -692,17 +690,17 @@ const handleScroll = () => {
         {
           name: "Toyota Etios (Sedan)",
           desc: "Comfortable sedan perfect for city rides, airport transfers and daily travel.",
-          img: "https://i.pinimg.com/736x/e6/20/ca/e620caf702e909bccbf4f19d7132f931.jpg",
+          img: "/etios.webp",
         },
         {
           name: "Maruti Ertiga (MPV)",
           desc: "Spacious option ideal for families and group travel with extra comfort.",
-          img: "https://content.carlelo.com/media/models/Ertiga/base/ertiga-1.webp",
+          img: "/ertiga.webp",
         },
         {
           name: "Toyota Innova (SUV)",
           desc: "Premium SUV for long-distance trips, airport travel and luxury comfort.",
-          img: "https://static-cdn.cars24.com/prod/new-car-cms/Toyota_Innova_Crysta_exterior_9_6c3f5e4a72.png",
+          img: "/innova.webp"
         },
       ].map((car, i) => (
         <motion.div
@@ -719,6 +717,7 @@ const handleScroll = () => {
   src={car.img}
   alt={`${car.name} taxi service in Udupi for airport and local travel`}
   loading="lazy"
+  decoding="async"
   width="600"
   height="400"
   className="w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-700"
@@ -754,8 +753,8 @@ const handleScroll = () => {
               </a>
 
               <div className="text-xs text-gray-700">
-  Available 24/7
-</div>
+                 Available 24/7
+                </div>
 
             </div>
 
@@ -912,12 +911,14 @@ const handleScroll = () => {
       className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200"
     >
       <iframe
-        title="Udupi taxi service location on Google Maps"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.119187335874!2d74.75118144017551!3d13.342861306682783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbd27ce127fa7%3A0xe0af20a9c7cfbd15!2sUdupi%20Taxi%20-%20Udupi%20Tours%20and%20Travels!5e0!3m2!1sen!2sin!4v1775884781396!5m2!1sen!2sin"
-        className="w-full h-[420px] md:h-[480px]"
-        style={{ border: 0 }}
-        loading="lazy"
-      ></iframe>
+  title="Udupi taxi service location on Google Maps"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.119187335874!2d74.75118144017551!3d13.342861306682783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbd27ce127fa7%3A0xe0af20a9c7cfbd15!2sUdupi%20Taxi%20-%20Udupi%20Tours%20and%20Travels!5e0!3m2!1sen!2sin!4v1775884781396!5m2!1sen!2sin"
+  className="w-full h-[420px] md:h-[480px]"
+  style={{ border: 0 }}
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
     </motion.div>
 
     {/* CTA */}
@@ -961,7 +962,7 @@ const handleScroll = () => {
       whileInView={{ opacity: 1, y: 0 }}
       className="max-w-4xl mx-auto text-center mb-20"
     >
-      <p className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-4">
+      <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
         About Our Service
       </p>
 
@@ -992,7 +993,7 @@ const handleScroll = () => {
         whileInView={{ opacity: 1, y: 0 }}
         className="text-center mb-14"
       >
-        <p className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-4">
+        <p className="text-xs tracking-[0.3em] uppercase text-gray-700 mb-4">
           Travel Guides
         </p>
 
@@ -1147,7 +1148,7 @@ const handleScroll = () => {
   <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 via-transparent to-red-600/20"></div>
 
   {/* SUBTLE NOISE EFFECT (premium feel) */}
-  <div className="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/noise.png')]"></div>
+  <div className="absolute inset-0 opacity-[0.03] "></div>
 
   <div className="relative z-10 max-w-3xl mx-auto px-6">
 
