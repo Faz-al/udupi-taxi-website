@@ -64,15 +64,15 @@ export default function Navbar() {
 
           {/* PHONE (desktop only) */}
           <a
-            href="tel:+919901159323"
+            href="tel:+917411009351"
             className="hidden md:block text-sm font-medium text-gray-700 hover:text-black"
           >
-            +91 9901159323
+            +91 7411009351
           </a>
 
           {/* CTA */}
           <a
-            href="tel:+919901159323"
+            href="tel:+917411009351"
             className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-900 transition shadow-md"
           >
             Book Now
@@ -115,7 +115,7 @@ export default function Navbar() {
 
           {/* MOBILE CTA */}
           <a
-            href="tel:+919901159323"
+            href="tel:+917411009351"
             className="block mt-4 bg-black text-white text-center py-3 rounded-full font-semibold"
           >
             Book Now

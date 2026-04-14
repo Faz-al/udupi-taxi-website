@@ -54,7 +54,7 @@ const message = encodeURIComponent(messageText);
 
         {/* Call */}
         <motion.a
-          href="tel:+919901159323"
+          href="tel:+917411009351"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           className="flex items-center gap-3 bg-black text-white px-5 py-3 rounded-full shadow-2xl text-sm font-medium"
@@ -65,7 +65,7 @@ const message = encodeURIComponent(messageText);
 
         {/* WhatsApp */}
         <motion.a
-  href={`https://wa.me/919901159323?text=${message}`}
+  href={`https://wa.me/917411009351?text=${message}`}
   target="_blank"
   rel="noopener noreferrer"
   variants={pulse}
@@ -96,7 +96,7 @@ const message = encodeURIComponent(messageText);
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-50 backdrop-blur-md bg-white/90 border-t">
 
         <motion.a
-          href="tel:+919901159323"
+          href="tel:+917411009351"
           whileTap={{ scale: 0.97 }}
           className="w-1/2 text-center py-4 font-medium text-black"
         >
@@ -104,7 +104,7 @@ const message = encodeURIComponent(messageText);
         </motion.a>
 
         <motion.a
-  href={`https://wa.me/919901159323?text=${message}`}
+  href={`https://wa.me/917411009351?text=${message}`}
   target="_blank"
   rel="noopener noreferrer"
   whileTap={{ scale: 0.97 }}

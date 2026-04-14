@@ -74,7 +74,7 @@ export default function AirportTaxi() {
         </p>
 
         <a
-          href="tel:+919901159323"
+          href="tel:+917411009351"
           className="bg-red-600 text-white px-8 py-4 rounded-2xl text-lg hover:bg-red-700 transition shadow-md hover:shadow-xl"
         >
           Book Airport Taxi Now
@@ -329,7 +329,7 @@ export default function AirportTaxi() {
         </p>
 
         <a
-          href="tel:+919901159323"
+          href="tel:+917411009351"
           className="bg-red-600 px-10 py-4 rounded-2xl text-lg hover:bg-red-700 transition shadow-lg"
         >
           Call Now
